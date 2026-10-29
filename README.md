@@ -135,6 +135,24 @@ The dashboard can be hosted on Streamlit Community Cloud:
 2. On share.streamlit.io, create a new app from the repository with `app.py` as the main file.
 3. `requirements.txt` installs the Python packages and `packages.txt` installs ffmpeg for audio analysis.
 
+## Dataset
+
+No training dataset is needed. Face detection uses the pretrained Haar cascades that ship with OpenCV, and voice activity detection is threshold based. For testing and demos, `engagement_agent/demo.py` generates a simulated 30 minute class with 12 participants, a mid session attention dip, a late decline, two low engagement participants and four early leavers. The unit tests build their own synthetic inputs. Real classroom recordings are intentionally not included for privacy reasons.
+
+## Results
+
+`results/` holds the output of the simulated demo session, produced with:
+
+```bash
+python -c "from engagement_agent import save_report; from engagement_agent.demo import demo_report; save_report(demo_report(), 'results')"
+```
+
+- `results/report.json`: session summary, participants, timeline and teaching suggestions
+- `results/attendance.csv`: 12 participants with presence, attention, activity and engagement
+- `results/timeline.csv`: 30 one minute intervals with headcount and engagement signals
+
+The report shows the attention dip around minute 12, the decline in the final quarter, the four early leavers and the two low engagement participants, each with matching teaching suggestions.
+
 ## Limitations
 
 - Haar cascade detection works best with a front facing camera, good lighting and faces at least about 25 pixels wide.
@@ -145,3 +163,13 @@ The dashboard can be hosted on Streamlit Community Cloud:
 ## Tech stack
 
 Python, OpenCV, NumPy, pandas, Streamlit, ffmpeg.
+
+## References
+
+- Viola, P. and Jones, M. (2001). Rapid Object Detection using a Boosted Cascade of Simple Features. CVPR.
+- OpenCV Cascade Classifier documentation: https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html
+- Rosebrock, A. Simple object tracking with OpenCV (centroid tracking): https://pyimagesearch.com/2018/07/23/simple-object-tracking-with-opencv/
+- Rabiner, L. R. and Sambur, M. R. (1975). An Algorithm for Determining the Endpoints of Isolated Utterances. Bell System Technical Journal (energy based voice activity detection).
+- FFmpeg documentation: https://ffmpeg.org/documentation.html
+- Streamlit documentation: https://docs.streamlit.io
+- pandas documentation: https://pandas.pydata.org/docs/

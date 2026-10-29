@@ -1,0 +1,505 @@
+{
+  "session": {
+    "duration": "30:00",
+    "duration_s": 1800.0,
+    "participants": 12,
+    "avg_engagement": 70.5,
+    "interval_s": 60,
+    "audio": true
+  },
+  "participants": [
+    {
+      "id": "P01",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "29:59",
+      "present_s": 1607.5,
+      "presence_pct": 89.3,
+      "attention_pct": 79.1,
+      "active_pct": 62.0,
+      "longest_inactive_s": 2.0,
+      "engagement": 74.8
+    },
+    {
+      "id": "P02",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "29:59",
+      "present_s": 1628.5,
+      "presence_pct": 90.5,
+      "attention_pct": 78.5,
+      "active_pct": 63.2,
+      "longest_inactive_s": 2.0,
+      "engagement": 74.7
+    },
+    {
+      "id": "P03",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "29:59",
+      "present_s": 1628.5,
+      "presence_pct": 90.5,
+      "attention_pct": 77.4,
+      "active_pct": 62.2,
+      "longest_inactive_s": 2.0,
+      "engagement": 73.6
+    },
+    {
+      "id": "P04",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "29:59",
+      "present_s": 1613.0,
+      "presence_pct": 89.6,
+      "attention_pct": 27.5,
+      "active_pct": 63.5,
+      "longest_inactive_s": 2.5,
+      "engagement": 36.5
+    },
+    {
+      "id": "P05",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "29:59",
+      "present_s": 1617.5,
+      "presence_pct": 89.9,
+      "attention_pct": 78.1,
+      "active_pct": 61.3,
+      "longest_inactive_s": 1.5,
+      "engagement": 73.9
+    },
+    {
+      "id": "P06",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "29:59",
+      "present_s": 1621.5,
+      "presence_pct": 90.1,
+      "attention_pct": 78.2,
+      "active_pct": 61.3,
+      "longest_inactive_s": 1.5,
+      "engagement": 74.0
+    },
+    {
+      "id": "P07",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "20:59",
+      "present_s": 1134.0,
+      "presence_pct": 63.0,
+      "attention_pct": 83.6,
+      "active_pct": 64.1,
+      "longest_inactive_s": 2.0,
+      "engagement": 78.7
+    },
+    {
+      "id": "P08",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "29:59",
+      "present_s": 1608.5,
+      "presence_pct": 89.4,
+      "attention_pct": 78.3,
+      "active_pct": 61.2,
+      "longest_inactive_s": 1.5,
+      "engagement": 74.0
+    },
+    {
+      "id": "P09",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "29:59",
+      "present_s": 1612.0,
+      "presence_pct": 89.6,
+      "attention_pct": 27.7,
+      "active_pct": 63.2,
+      "longest_inactive_s": 3.5,
+      "engagement": 36.6
+    },
+    {
+      "id": "P10",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "20:59",
+      "present_s": 1131.5,
+      "presence_pct": 62.9,
+      "attention_pct": 83.5,
+      "active_pct": 61.5,
+      "longest_inactive_s": 1.5,
+      "engagement": 78.0
+    },
+    {
+      "id": "P11",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "20:59",
+      "present_s": 1136.0,
+      "presence_pct": 63.1,
+      "attention_pct": 82.5,
+      "active_pct": 61.7,
+      "longest_inactive_s": 2.5,
+      "engagement": 77.3
+    },
+    {
+      "id": "P12",
+      "status": "Present",
+      "first_seen": "00:00",
+      "last_seen": "20:59",
+      "present_s": 1130.5,
+      "presence_pct": 62.8,
+      "attention_pct": 83.7,
+      "active_pct": 61.0,
+      "longest_inactive_s": 1.5,
+      "engagement": 78.0
+    }
+  ],
+  "timeline": [
+    {
+      "start": "00:00",
+      "end": "01:00",
+      "start_s": 0,
+      "headcount": 12,
+      "attention": 0.791,
+      "activity": 0.617,
+      "speech": 0.858,
+      "engagement": 77.0
+    },
+    {
+      "start": "01:00",
+      "end": "02:00",
+      "start_s": 60,
+      "headcount": 12,
+      "attention": 0.797,
+      "activity": 0.614,
+      "speech": 0.858,
+      "engagement": 77.3
+    },
+    {
+      "start": "02:00",
+      "end": "03:00",
+      "start_s": 120,
+      "headcount": 12,
+      "attention": 0.806,
+      "activity": 0.64,
+      "speech": 0.9,
+      "engagement": 79.2
+    },
+    {
+      "start": "03:00",
+      "end": "04:00",
+      "start_s": 180,
+      "headcount": 12,
+      "attention": 0.817,
+      "activity": 0.615,
+      "speech": 0.925,
+      "engagement": 79.8
+    },
+    {
+      "start": "04:00",
+      "end": "05:00",
+      "start_s": 240,
+      "headcount": 12,
+      "attention": 0.803,
+      "activity": 0.624,
+      "speech": 0.858,
+      "engagement": 77.8
+    },
+    {
+      "start": "05:00",
+      "end": "06:00",
+      "start_s": 300,
+      "headcount": 12,
+      "attention": 0.806,
+      "activity": 0.611,
+      "speech": 0.875,
+      "engagement": 78.1
+    },
+    {
+      "start": "06:00",
+      "end": "07:00",
+      "start_s": 360,
+      "headcount": 12,
+      "attention": 0.817,
+      "activity": 0.623,
+      "speech": 0.833,
+      "engagement": 78.1
+    },
+    {
+      "start": "07:00",
+      "end": "08:00",
+      "start_s": 420,
+      "headcount": 12,
+      "attention": 0.807,
+      "activity": 0.629,
+      "speech": 0.892,
+      "engagement": 78.8
+    },
+    {
+      "start": "08:00",
+      "end": "09:00",
+      "start_s": 480,
+      "headcount": 12,
+      "attention": 0.787,
+      "activity": 0.623,
+      "speech": 0.892,
+      "engagement": 77.5
+    },
+    {
+      "start": "09:00",
+      "end": "10:00",
+      "start_s": 540,
+      "headcount": 12,
+      "attention": 0.752,
+      "activity": 0.643,
+      "speech": 0.933,
+      "engagement": 76.6
+    },
+    {
+      "start": "10:00",
+      "end": "11:00",
+      "start_s": 600,
+      "headcount": 12,
+      "attention": 0.593,
+      "activity": 0.616,
+      "speech": 0.925,
+      "engagement": 66.4
+    },
+    {
+      "start": "11:00",
+      "end": "12:00",
+      "start_s": 660,
+      "headcount": 12,
+      "attention": 0.397,
+      "activity": 0.613,
+      "speech": 0.867,
+      "engagement": 53.4
+    },
+    {
+      "start": "12:00",
+      "end": "13:00",
+      "start_s": 720,
+      "headcount": 12,
+      "attention": 0.419,
+      "activity": 0.628,
+      "speech": 0.85,
+      "engagement": 54.7
+    },
+    {
+      "start": "13:00",
+      "end": "14:00",
+      "start_s": 780,
+      "headcount": 12,
+      "attention": 0.596,
+      "activity": 0.616,
+      "speech": 0.767,
+      "engagement": 63.4
+    },
+    {
+      "start": "14:00",
+      "end": "15:00",
+      "start_s": 840,
+      "headcount": 12,
+      "attention": 0.709,
+      "activity": 0.622,
+      "speech": 0.5,
+      "engagement": 65.0
+    },
+    {
+      "start": "15:00",
+      "end": "16:00",
+      "start_s": 900,
+      "headcount": 12,
+      "attention": 0.772,
+      "activity": 0.624,
+      "speech": 0.592,
+      "engagement": 70.6
+    },
+    {
+      "start": "16:00",
+      "end": "17:00",
+      "start_s": 960,
+      "headcount": 12,
+      "attention": 0.799,
+      "activity": 0.617,
+      "speech": 0.575,
+      "engagement": 71.8
+    },
+    {
+      "start": "17:00",
+      "end": "18:00",
+      "start_s": 1020,
+      "headcount": 12,
+      "attention": 0.806,
+      "activity": 0.617,
+      "speech": 0.525,
+      "engagement": 71.2
+    },
+    {
+      "start": "18:00",
+      "end": "19:00",
+      "start_s": 1080,
+      "headcount": 12,
+      "attention": 0.807,
+      "activity": 0.644,
+      "speech": 0.883,
+      "engagement": 79.0
+    },
+    {
+      "start": "19:00",
+      "end": "20:00",
+      "start_s": 1140,
+      "headcount": 12,
+      "attention": 0.81,
+      "activity": 0.632,
+      "speech": 0.867,
+      "engagement": 78.6
+    },
+    {
+      "start": "20:00",
+      "end": "21:00",
+      "start_s": 1200,
+      "headcount": 12,
+      "attention": 0.796,
+      "activity": 0.612,
+      "speech": 0.875,
+      "engagement": 77.5
+    },
+    {
+      "start": "21:00",
+      "end": "22:00",
+      "start_s": 1260,
+      "headcount": 8,
+      "attention": 0.764,
+      "activity": 0.62,
+      "speech": 0.892,
+      "engagement": 76.1
+    },
+    {
+      "start": "22:00",
+      "end": "23:00",
+      "start_s": 1320,
+      "headcount": 8,
+      "attention": 0.755,
+      "activity": 0.63,
+      "speech": 0.892,
+      "engagement": 75.7
+    },
+    {
+      "start": "23:00",
+      "end": "24:00",
+      "start_s": 1380,
+      "headcount": 8,
+      "attention": 0.696,
+      "activity": 0.59,
+      "speech": 0.917,
+      "engagement": 71.9
+    },
+    {
+      "start": "24:00",
+      "end": "25:00",
+      "start_s": 1440,
+      "headcount": 8,
+      "attention": 0.629,
+      "activity": 0.624,
+      "speech": 0.883,
+      "engagement": 67.9
+    },
+    {
+      "start": "25:00",
+      "end": "26:00",
+      "start_s": 1500,
+      "headcount": 8,
+      "attention": 0.611,
+      "activity": 0.634,
+      "speech": 0.867,
+      "engagement": 66.7
+    },
+    {
+      "start": "26:00",
+      "end": "27:00",
+      "start_s": 1560,
+      "headcount": 8,
+      "attention": 0.51,
+      "activity": 0.575,
+      "speech": 0.925,
+      "engagement": 60.6
+    },
+    {
+      "start": "27:00",
+      "end": "28:00",
+      "start_s": 1620,
+      "headcount": 8,
+      "attention": 0.479,
+      "activity": 0.626,
+      "speech": 0.883,
+      "engagement": 58.9
+    },
+    {
+      "start": "28:00",
+      "end": "29:00",
+      "start_s": 1680,
+      "headcount": 8,
+      "attention": 0.39,
+      "activity": 0.631,
+      "speech": 0.908,
+      "engagement": 54.2
+    },
+    {
+      "start": "29:00",
+      "end": "30:00",
+      "start_s": 1740,
+      "headcount": 8,
+      "attention": 0.362,
+      "activity": 0.633,
+      "speech": 0.908,
+      "engagement": 52.5
+    }
+  ],
+  "suggestions": [
+    {
+      "level": "warning",
+      "title": "Attention dip 11:00 to 13:00",
+      "detail": "Engagement fell well below the session average. Try a quick check for understanding, a question to the room or a change of activity at this point."
+    },
+    {
+      "level": "warning",
+      "title": "Attention dip 28:00 to 30:00",
+      "detail": "Engagement fell well below the session average. Try a quick check for understanding, a question to the room or a change of activity at this point."
+    },
+    {
+      "level": "warning",
+      "title": "Engagement declined over the session",
+      "detail": "Engagement dropped from 78 in the first third to 66 in the last third. Consider a short break or a switch in activity around the midpoint."
+    },
+    {
+      "level": "suggestion",
+      "title": "Long uninterrupted talk 10:00 to 13:00",
+      "detail": "Continuous speech with below average engagement suggests a long monologue. Pause to invite questions or ask students to summarize the key point."
+    },
+    {
+      "level": "suggestion",
+      "title": "Long uninterrupted talk 24:00 to 30:00",
+      "detail": "Continuous speech with below average engagement suggests a long monologue. Pause to invite questions or ask students to summarize the key point."
+    },
+    {
+      "level": "suggestion",
+      "title": "Possible side conversations 11:00 to 12:00",
+      "detail": "High audio activity combined with low forward attention can indicate off task talk. Consider regrouping the class or giving a structured discussion prompt."
+    },
+    {
+      "level": "suggestion",
+      "title": "Possible side conversations 28:00 to 30:00",
+      "detail": "High audio activity combined with low forward attention can indicate off task talk. Consider regrouping the class or giving a structured discussion prompt."
+    },
+    {
+      "level": "info",
+      "title": "Participants left before the end",
+      "detail": "Headcount fell from a peak of 12 to 8 in the final interval. Check whether the session ran long or whether the ending could be more focused."
+    },
+    {
+      "level": "info",
+      "title": "2 participant(s) with low engagement",
+      "detail": "P04, P09 showed low engagement. A brief, private check in may help."
+    }
+  ]
+}
