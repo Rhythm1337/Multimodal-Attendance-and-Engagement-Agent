@@ -38,6 +38,7 @@ audio ──► audio.py ── ffmpeg decode ── energy based voice activity
 | `engagement_agent/analytics.py` | Attendance filtering, engagement scoring and interval timeline |
 | `engagement_agent/advisor.py` | Rule based teaching suggestions |
 | `engagement_agent/pipeline.py` | End to end analysis and report export |
+| `engagement_agent/demo.py` | Simulated classroom session for demos without a video |
 | `app.py` | Streamlit dashboard |
 
 ### Engagement score
@@ -75,7 +76,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Upload a session video, adjust the interval and attendance settings in the sidebar, and click **Analyze session**.
+Upload a session video, adjust the interval and attendance settings in the sidebar, and click **Analyze session**. To explore the dashboard without a video, click **Run a simulated demo session**.
 
 ### Command line
 
@@ -112,6 +113,25 @@ Outputs written to the output directory:
 ```bash
 pytest
 ```
+
+## Project workflow
+
+| Epic | Where it is implemented |
+| --- | --- |
+| 1. Requirements specification and environment setup | `requirements.txt`, `packages.txt`, Setup section above |
+| 2. Vision module development | `engagement_agent/vision.py` |
+| 3. Audio module development | `engagement_agent/audio.py` |
+| 4. AI implementation | Multimodal fusion in `analytics.py`, reasoning agent in `advisor.py` |
+| 5. Analytics and recommendation engine | `engagement_agent/analytics.py`, `engagement_agent/advisor.py` |
+| 6. Interface, testing and deployment | `app.py`, `engagement_agent/__main__.py`, `tests/`, Deployment section below |
+
+## Deployment
+
+The dashboard can be hosted on Streamlit Community Cloud:
+
+1. Push the repository to GitHub.
+2. On share.streamlit.io, create a new app from the repository with `app.py` as the main file.
+3. `requirements.txt` installs the Python packages and `packages.txt` installs ffmpeg for audio analysis.
 
 ## Limitations
 

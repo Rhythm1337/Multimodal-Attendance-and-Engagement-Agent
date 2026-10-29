@@ -7,6 +7,7 @@ import pandas as pd
 import streamlit as st
 
 from engagement_agent import analyze
+from engagement_agent.demo import demo_report
 
 st.set_page_config(page_title="Attendance and Engagement Agent", layout="wide")
 st.title("Multimodal Attendance and Engagement Agent")
@@ -22,6 +23,9 @@ with st.sidebar:
 video = st.file_uploader("Session video", type=["mp4", "mov", "avi", "mkv", "webm"])
 audio = st.file_uploader("Optional separate audio (otherwise the video's audio track is used)",
                          type=["wav", "mp3", "m4a", "ogg", "flac"])
+
+if st.button("No video? Run a simulated demo session"):
+    st.session_state.report = demo_report(interval=interval)
 
 if video and st.button("Analyze session", type="primary"):
     with tempfile.TemporaryDirectory() as tmp:
@@ -63,10 +67,10 @@ if report:
 
     st.subheader("Attendance and participant analytics")
     participants = pd.DataFrame(report["participants"])
-    st.dataframe(participants, use_container_width=True, hide_index=True)
+    st.dataframe(participants, hide_index=True)
 
     st.subheader("Interval details")
-    st.dataframe(timeline.drop(columns="start_s"), use_container_width=True, hide_index=True)
+    st.dataframe(timeline.drop(columns="start_s"), hide_index=True)
 
     d1, d2, d3 = st.columns(3)
     d1.download_button("Download report (JSON)", json.dumps(report, indent=2), "report.json", "application/json")

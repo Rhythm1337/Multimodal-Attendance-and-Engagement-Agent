@@ -5,6 +5,7 @@ from engagement_agent import analyze, save_report
 from engagement_agent.advisor import suggest
 from engagement_agent.analytics import build_report
 from engagement_agent.audio import voice_activity
+from engagement_agent.demo import demo_report
 from engagement_agent.vision import CentroidTracker
 
 
@@ -62,3 +63,11 @@ def test_pipeline_runs_on_video_without_people(tmp_path):
     assert report["suggestions"][0]["title"] == "No participants detected"
     out = save_report(report, tmp_path / "out")
     assert (out / "report.json").exists() and (out / "attendance.csv").exists()
+
+
+def test_demo_session_produces_full_report():
+    report = demo_report()
+    assert report["session"]["participants"] == 12
+    assert len(report["timeline"]) == 30
+    titles = " ".join(t["title"] for t in report["suggestions"])
+    assert "Attention dip" in titles and "left before the end" in titles
