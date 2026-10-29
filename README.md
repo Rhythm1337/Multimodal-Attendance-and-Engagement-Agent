@@ -1,6 +1,7 @@
 # Multimodal Attendance and Engagement Agent
 
-**Live demo:** https://classroom-engagement-agent.streamlit.app/
+**Live demo:** https://classroom-engagement-agent.streamlit.app/  
+**Demo video:** [docs/demo.mp4](docs/demo.mp4)
 
 An AI powered, privacy preserving classroom intelligence system. It processes a recorded or live classroom video, tracks attendance based on sustained presence, fuses visual and audio signals into engagement trends, and generates teaching suggestions for the instructor. Everything runs offline on a local machine.
 

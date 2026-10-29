@@ -9,3 +9,4 @@ reports/
 *.mkv
 *.webm
 *.wav
+!docs/demo.mp4
